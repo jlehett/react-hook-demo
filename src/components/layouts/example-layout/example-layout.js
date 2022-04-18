@@ -1,9 +1,10 @@
-import localStyles from './home.styles.scss';
+import PropTypes from 'prop-types';
+import localStyles from './example-layout.styles.scss';
 
 /**
- * Home View
+ * Example layout.
  */
-const Home = ({
+const ExampleLayout = ({
 
 }) => {
     /*********
@@ -22,12 +23,16 @@ const Home = ({
      * Main render.
      */
     return (
-        <div className="page">
-            <h1>
-                Test
-            </h1>
-        </div>
+        <div>Hi</div>
     );
 };
 
-export default Home;
+ExampleLayout.propTypes = {
+
+};
+
+ExampleLayout.defaultProps = {
+
+};
+
+export default ExampleLayout;

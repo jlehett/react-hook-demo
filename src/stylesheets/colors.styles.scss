@@ -1,9 +1,6 @@
 // General content colors
-$background: #FCFCFC;
-$primary: #1282A2;
-
-// Allow necessary colors to be exported from this file to use in JS
-:export {
-    background: $background;
-    primary: $primary;
-}
+$contentBackground: #ffffff;
+$background: #12121b;
+$primary: #f15025;
+$secondary: #386fa4;
+$text: #28262C;

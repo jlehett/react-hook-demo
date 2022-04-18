@@ -1,3 +1,3 @@
 # Template
 
-Placeholder.
+Presentation on React hooks in a website demo.

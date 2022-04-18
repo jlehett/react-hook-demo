@@ -21,6 +21,10 @@ body {
     position: relative;
     -webkit-overflow-scrolling: touch;
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /**

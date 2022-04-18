@@ -4,6 +4,9 @@ import { StyledEngineProvider } from '@mui/material';
 import { BrowserRouter } from 'react-router-dom';
 import theme from '@stylesheets/muiTheme';
 import '@stylesheets/main.scss';
+import '@stylesheets/typography.scss';
+import '@stylesheets/common-ui.scss';
+import '@stylesheets/mixins.scss';
 
 export const decorators = [
     (Story) => (
