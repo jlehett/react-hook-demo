@@ -4,7 +4,7 @@ import colors from '../stylesheets/colors.styles.scss';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#000',
+            main: colors.primary,
             contrastText: '#fff',
         }
     },
