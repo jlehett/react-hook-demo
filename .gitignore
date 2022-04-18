@@ -1,0 +1,10 @@
+node_modules/
+npm-debug.log
+dist/
+.env
+package-lock.json
+*.env
+.firebase
+.history/
+.vscode
+jsconfig.json

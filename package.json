@@ -1,0 +1,86 @@
+{
+  "name": "react-hook-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.16.0",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.0",
+    "@mui/material": "^5.2.1",
+    "@mui/styles": "^5.5.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.2",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-console": "^1.2.3",
+    "@storybook/addon-docs": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/builder-webpack5": "^6.3.12",
+    "@storybook/manager-webpack5": "^6.3.12",
+    "@storybook/node-logger": "^6.3.12",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.12",
+    "@svgr/webpack": "^5.5.0",
+    "@unifire-js/categorized-errors": "^0.0.11",
+    "@unifire-js/firebase": "^3.0.4-alpha.3",
+    "@unifire-js/hooks": "^0.0.13",
+    "@unifire-js/storybook-utils": "^0.0.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "copy-webpack-plugin": "^10.0.0",
+    "css-loader": "^6.5.1",
+    "dotenv": "^10.0.0",
+    "file-loader": "^6.2.0",
+    "firebase": "^9.1.2",
+    "firebase-tools": "^10.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.21",
+    "node-sass": "^6.0.1",
+    "npm": "^8.1.4",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-refresh": "^0.11.0",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "^4.0.3",
+    "sass-loader": "^12.3.0",
+    "source-map-loader": "^3.0.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "start": "npx webpack serve -c webpack.development.js",
+    "build": "npm run build-functions && npm run build-site",
+    "test": "echo \"Add tests!\"",
+    "eject": "react-scripts eject",
+    "build-functions": "babel app --config-file ./app/.babelrc --out-dir functions --copy-files --ignore app/node_modules",
+    "build-site": "npx webpack -c webpack.production.js",
+    "deploy": "npm run build && firebase deploy",
+    "deploy-site": "npm run build-site && firebase deploy --only hosting",
+    "deploy-functions": "npm run build-functions && firebase deploy --only functions",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prebuild": "node node_modules/rimraf/bin functions",
+    "postbuild": "cd functions && npm i -s"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/preset-env": "^7.16.5",
+    "rimraf": "^3.0.2"
+  }
+}

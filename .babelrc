@@ -1,0 +1,41 @@
+{
+    "plugins": [
+        "react-refresh/babel",
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "@assets": "./src/assets",
+                    "@components": "./src/components",
+                    "@hooks": "./src/hooks",
+                    "@models": "./src/models",
+                    "@root": "./src/root",
+                    "@services": "./src/services",
+                    "@stylesheets": "./src/stylesheets",
+                    "@utils": "./src/utils",
+                    "@views": "./src/views"
+                }
+            }
+        ]
+    ],
+    "presets": [
+        [
+            "@babel/preset-react",
+            {
+                "runtime": "automatic"
+            }
+        ],
+        [
+            "@babel/preset-env",
+            {
+                "modules": false,
+                "targets": {
+                    "esmodules": true
+                },
+                "shippedProposals": true,
+                "corejs": "3.16",
+                "useBuiltIns": "usage"
+            }
+        ]
+    ]
+}
