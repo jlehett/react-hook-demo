@@ -15,6 +15,10 @@ h1 {
     font-size: 36px;
     margin: 20px 0;
 
+    & > code {
+        font-size: 36px;
+    }
+
     &:first-child {
         margin-top: 0;
     }
@@ -33,6 +37,10 @@ h2 {
     font-size: 28px;
     margin: 20px 0;
 
+    & > code {
+        font-size: 28px;
+    }
+
     &:first-child {
         margin-top: 0;
     }
@@ -48,5 +56,13 @@ h2 {
 }
 
 p {
+    font-size: 24px;
+
+    & > code {
+        font-size: 24px;
+    }
+}
+
+code {
     font-size: 24px;
 }

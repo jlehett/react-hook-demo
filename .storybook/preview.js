@@ -7,6 +7,7 @@ import '@stylesheets/main.scss';
 import '@stylesheets/typography.scss';
 import '@stylesheets/common-ui.scss';
 import '@stylesheets/mixins.scss';
+import '@stylesheets/layout.scss';
 
 export const decorators = [
     (Story) => (
@@ -31,6 +32,15 @@ export const parameters = {
             color: /(background|color)$/i,
             date: /Date$/,
         },
+    },
+    backgrounds: {
+        default: 'White',
+        values: [
+            {
+                name: 'White',
+                value: '#ffffff',
+            },
+        ],
     },
     viewport: {
         viewports: {

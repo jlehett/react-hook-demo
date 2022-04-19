@@ -1,20 +1,25 @@
+import { useState } from 'react';
 import {
     setAsCategory
 } from '@unifire-js/storybook-utils';
-import ExampleLayout from './example-layout';
+import RenderTracker from './render-tracker';
 
 // Construct the argTypes object
 const argTypes = {};
 
 // Storybook default export
 export default {
-    title: 'Layouts/ExampleLayout',
-    component: ExampleLayout,
+    title: 'Tracking/RenderTracker',
+    component: RenderTracker,
     argTypes,
 };
 
 const Template = (args) => {
-    return <ExampleLayout {...args}/>;
+    const [counter, setCounter] = useState(0);
+
+    
+
+    return <RenderTracker {...args}/>;
 };
 
 // Basic Demo

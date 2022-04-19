@@ -3,6 +3,7 @@ import '@stylesheets/main.scss';
 import '@stylesheets/typography.scss';
 import '@stylesheets/common-ui.scss';
 import '@stylesheets/mixins.scss';
+import '@stylesheets/layout.scss';
 import {
     ThemeProvider,
     StyledEngineProvider,

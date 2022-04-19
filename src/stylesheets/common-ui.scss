@@ -14,3 +14,32 @@
     flex-direction: column;
     gap: 40px;
 }
+
+.childComponent {
+    border: 1px solid black;
+    padding: 40px 20px;
+    position: relative;
+    
+    &:before {
+        position: absolute;
+        content: "Child Component";
+        font-family: "Roboto";
+        font-size: 20px;
+        top: -12px;
+        left: 20px;
+        background: white;
+        width: max-content;
+        padding: 0 8px;
+    }
+}
+
+code.block {
+    background: $codeBackground;
+    color: $codeForeground;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.noMargin {
+    margin: 0 !important;
+}
