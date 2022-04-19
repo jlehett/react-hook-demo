@@ -10,5 +10,5 @@ export function logInfo(text) {
  * Function to log a mock table entry to the console.
  */
 export function logEntry(key, value) {
-    console.log(`%c\t[TABLE] ${key} - ${value}`, "color: #c400c7; font-size: 30px");
+    console.log(`%c\t[TABLE] %c${key} - ${value}`, "color: #c400c7; font-size: 30px;", "color: black; font-size: 30px;");
 }

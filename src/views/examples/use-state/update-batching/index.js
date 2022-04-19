@@ -108,7 +108,7 @@ const Wrapper = () => {
             </div>
             <UpdateBatching/>
             <p>
-                Trigger a re-render of the child component (above) to see what happens to the <code>counter</code> variable.
+                Trigger a re-render of the child component (above) to see what happens.
             </p>
             <div>
                 <Button variant="contained" onClick={triggerRerender}>

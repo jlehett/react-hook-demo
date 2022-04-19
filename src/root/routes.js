@@ -9,12 +9,18 @@ import UseState_NoState from '@views/examples/use-state/no-state';
 import UseState_NoStateReset from '@views/examples/use-state/no-state-reset';
 import UseState_Simple from '@views/examples/use-state/simple';
 import UseState_UpdateBatching from '@views/examples/use-state/update-batching';
+import UseEffect_BasicEffect from '@views/examples/use-effect/basic-effect';
+import UseEffect_EffectCleanup from '@views/examples/use-effect/effect-cleanup';
+import UseEffect_ClassLifecycleReplacement from '@views/examples/use-effect/class-lifecycle-replacement';
 
 const pageOrdering = [
     <UseState_NoState/>,
     <UseState_NoStateReset/>,
     <UseState_Simple/>,
     <UseState_UpdateBatching/>,
+    <UseEffect_BasicEffect/>,
+    <UseEffect_EffectCleanup/>,
+    <UseEffect_ClassLifecycleReplacement/>,
 ];
 
 const pageRoutes = () => {
