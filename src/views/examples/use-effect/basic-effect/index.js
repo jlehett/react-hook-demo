@@ -124,7 +124,7 @@ const Wrapper = () => {
                 </p>
                 <ol>
                     <li>Make DOM manipulations.</li>
-                    <li className="primary"><code>useLayoutEffect</code>s (will be discussed later)</li>
+                    <li className="primary"><code>useLayoutEffect</code>s</li>
                     <li>Browser repaints the DOM changes.</li>
                     <li className="primary"><code>useEffect</code>s</li>
                 </ol>
